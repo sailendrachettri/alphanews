@@ -1,0 +1,71 @@
+{
+    "status": "ok",
+    "totalResults": 5,
+    "articles": [
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters",
+            "title": "Japan space agency rocket engine explodes during test",
+            "description": "A rocket engine exploded during a test in Japan on Friday but there were no injuries, an official at Japan's Education, Science and Technology Ministry said.",
+            "url": "https://www.reuters.com/world/asia-pacific/japan-space-agency-rocket-explodes-during-engine-test-jiji-2023-07-14/",
+            "urlToImage": "https://www.reuters.com/pf/resources/images/reuters/reuters-default.webp?d=148",
+            "publishedAt": "2023-07-14T02:11:16Z",
+            "content": "TOKYO, July 14 (Reuters) - A rocket engine exploded during a test in Japan on Friday but there were no injuries, an official at Japan's Education, Science and Technology Ministry said.\r\nThe explosion… [+995 chars]"
+        },
+        {
+            "source": {
+                "id": "techradar",
+                "name": "TechRadar"
+            },
+            "author": "Desire Athow",
+            "title": "This incredible $500 laptop has built-in 7-inch tablet, a tiny removable webcam and even Microsoft Office",
+            "description": "Post Prime Day browsing just brought up a totally bonkers piece of technology",
+            "url": "https://www.techradar.com/pro/this-incredible-dollar500-laptop-has-built-in-7-inch-tablet-a-tiny-removable-webcam-and-even-microsoft-office",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/QYrLSbL6m5fh3AHZNsNiF6-1200-80.jpg",
+            "publishedAt": "2023-07-13T22:05:27Z",
+            "content": "I briefly came across this laptop while doing my Amazon Prime Day duties and on closer look it looks like a barely believable product that reminds me of the Lenovo ThinkBook Plus Gen 3\r\n. The ZWYING … [+2606 chars]"
+        },
+        {
+            "source": {
+                "id": "next-big-future",
+                "name": "Next Big Future"
+            },
+            "author": "Brian Wang",
+            "title": "Superconducting-nanowire Single-photon Camera with 400,000 Pixels Will Explore Brain cells, space | NextBigFuture.com",
+            "description": "A team at the National Institute of Standards and Technology in Boulder, Colorado, has reported the successful implementation of a 400,000 pixel",
+            "url": "https://www.nextbigfuture.com/2023/07/superconducting-nanowire-single-photon-camera-with-400000-pixels.html",
+            "urlToImage": "https://nextbigfuture.s3.amazonaws.com/uploads/2023/07/super-conducting-nanow-1.jpeg",
+            "publishedAt": "2023-07-12T23:38:17Z",
+            "content": "A team at the National Institute of Standards and Technology in Boulder, Colorado, has reported the successful implementation of a 400,000 pixel superconducting nanowire single-photon detector (SNSPD… [+3805 chars]"
+        },
+        {
+            "source": {
+                "id": "next-big-future",
+                "name": "Next Big Future"
+            },
+            "author": "Brian Wang",
+            "title": "Rolls-Royce Funded for Micro Nuclear Lunar Reactor | NextBigFuture.com",
+            "description": "Rolls-Royce is working on a Micro-Reactor program to develop nuclear energy technology that will provide power needed for humans to live and work on the Moon.",
+            "url": "https://www.nextbigfuture.com/2023/07/rolls-royce-funded-for-micro-nuclear-lunar-reactor.html",
+            "urlToImage": "https://nextbigfuture.s3.amazonaws.com/uploads/2023/07/moonnuclearUK.png",
+            "publishedAt": "2023-07-12T13:44:03Z",
+            "content": "Rolls-Royce is working on a Micro-Reactor program to develop nuclear energy technology that will provide power needed for humans to live and work on the Moon. The UK Space Agency provided £2.9 millio… [+2305 chars]"
+        },
+        {
+            "source": {
+                "id": "newsweek",
+                "name": "Newsweek"
+            },
+            "author": "Mark Davis",
+            "title": "Newsweek",
+            "description": "Newsweek provides in-depth analysis, news and opinion about international issues, technology, business, culture and politics.",
+            "url": "https://www.newsweek.com/",
+            "urlToImage": "https://d.newsweek.com/en/full/2202468/special-presidential-envoy-climate-john-kerry.jpg",
+            "publishedAt": "2023-03-01T12:07:28.8517009Z",
+            "content": null
+        }
+    ]
+}
