@@ -7,7 +7,10 @@ import { Box } from '@mui/material';
 export const News = (props) => {
     // STATE VARIABLES
     const [articles, setArticles] = useState([])
-    // const [totalResults, setTotalResults] = useState(0)
+
+    // constant and variables
+    const apiKey = process.env.REACT_APP_NEWS_API_KEY
+    const defaultImage = process.env.REACT_APP_DEFAULT_IMAGE_URL
 
     // FUNCTIONS
     const captializeFirstLetter = (string) => {
@@ -16,7 +19,7 @@ export const News = (props) => {
 
     // handling API
     const updateNews = async () => {
-        const url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=fa152b462f164a19956f7bcf1edb3674"
+        const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}`
         const data = await fetch(url);
         const parsedData = await data.json()
 
@@ -26,14 +29,10 @@ export const News = (props) => {
 
     }
     useEffect(() => {
-        document.title = `${props.category === 'general' ? "News Monkey - get the latest news for free" : captializeFirstLetter(props.category)} latest news - NewsMonkey`
+        document.title = `${props.category === 'general' ? "Alpha News - get the latest news from all over the world" : captializeFirstLetter(props.category)} latest news - Alpha News`
         updateNews()
         // eslint-disable-next-line
     }, [])
-
-
-    // constant and variables
-    const defaultImage = "https://source.unsplash.com/random"
 
     return (
         <>
