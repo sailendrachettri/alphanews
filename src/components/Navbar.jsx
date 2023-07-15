@@ -9,10 +9,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import MotionPhotosAutoIcon from '@mui/icons-material/MotionPhotosAuto';
 import { Link } from 'react-router-dom';
 import { Tab } from '@mui/material';
+
+import MotionPhotosAutoIcon from '@mui/icons-material/MotionPhotosAuto';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,7 +30,7 @@ function Navbar() {
         <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    <MotionPhotosAutoIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
                     <Typography
                         variant="h6"
                         noWrap
@@ -91,7 +92,7 @@ function Navbar() {
                     </Box>
 
                     {/* Desktop view navbar */}
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                    <MotionPhotosAutoIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Typography
                         variant="h5"
                         noWrap
@@ -122,7 +123,9 @@ function Navbar() {
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Alpha News">
                             <IconButton sx={{ p: 0 }}>
-                                <Link to='/'><MotionPhotosAutoIcon fontSize='large' /></Link>
+                                <a href='https://github.com/sailendrachettri/alphanews' className='colorWhiteSomke' target='_blank' rel="noreferrer">
+                                    <GitHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} fontSize='large' />
+                                </a>
                             </IconButton>
                         </Tooltip>
                     </Box>
