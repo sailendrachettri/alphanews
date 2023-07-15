@@ -21,6 +21,22 @@ export const NewsItem = (props) => {
     // VARIABLES
     const getLogo = props.newsSource.charAt(0);
 
+    // Date formatting - generated code using chatGPT
+    const inputDate = props.publishedAt;
+    const date = new Date(inputDate);
+
+    // Formatting options
+    const options = {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true
+    };
+    // Formatting the date
+    const formattedDate = date.toLocaleDateString(undefined, options);
+
     return (
         <>
             <Box padding={2}>
@@ -37,13 +53,13 @@ export const NewsItem = (props) => {
                             </IconButton>
                         }
                         title={props.newsSource}
-                        subheader={props.publishedAt}
+                        subheader={formattedDate}
                     />
                     <CardMedia
                         component="img"
                         height="194"
                         image={props.img}
-                        alt="Paella dish"
+                        alt="alphanews"
                     />
                     <CardContent>
                         <Typography variant="h6">
