@@ -36,7 +36,11 @@ Start the Server
 ```bash
   npm run start
 ```
-  
+
+# New Features ideas
+- Save favorite news
+- Share new on social handles
+
 # Features
 
 - Read the latest message
