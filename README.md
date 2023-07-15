@@ -39,8 +39,8 @@ Start the Server
   
 # Features
 
-- Message encryption and decryption
-- WhatsApp integration to send encrypted messages
+- Read the latest message
+- Save the importent new for later use (working on this feature)
 
 # Screenshots
 <!-- <p><img src="https://drive.google.com/uc?export=view&id=1CfRqaNtp5veOOG89OT2dms7jcTj9_hjI" alt="Front page"></p>
