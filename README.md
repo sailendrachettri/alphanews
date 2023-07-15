@@ -43,7 +43,7 @@ Start the Server
 
 # Features of the app
 
-- Read the latest message
+- Read the latest news across world
 - Save the importent new for later use (working on this feature)
 
 # Screenshots

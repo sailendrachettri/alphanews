@@ -4,6 +4,10 @@
 }
 
 /* Custom css */
-.colorWhiteSomke {
-  color: whitesmoke;
+.logoColor {
+  color: black;
+}
+
+body {
+  background-color: whitesmoke;
 }

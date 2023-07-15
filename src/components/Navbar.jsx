@@ -27,7 +27,7 @@ function Navbar() {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" sx={{ bgcolor: "whitesmoke", color: 'black' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <MotionPhotosAutoIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -123,7 +123,7 @@ function Navbar() {
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Alpha News">
                             <IconButton sx={{ p: 0 }}>
-                                <a href='https://github.com/sailendrachettri/alphanews' className='colorWhiteSomke' target='_blank' rel="noreferrer">
+                                <a href='https://github.com/sailendrachettri/alphanews' className='logoColor' target='_blank' rel="noreferrer">
                                     <GitHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} fontSize='large' />
                                 </a>
                             </IconButton>

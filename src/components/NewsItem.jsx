@@ -40,7 +40,7 @@ export const NewsItem = (props) => {
     return (
         <>
             <Box padding={2}>
-                <Card sx={{ maxWidth: 345 }}>
+                <Card sx={{ maxWidth: 345, bgcolor: 'whitesmoke' }}>
                     <CardHeader
                         avatar={
                             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
