@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import { News } from './components/News';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const country = 'in'
@@ -18,9 +19,8 @@ function App() {
         <Route path='/health' element={<News key="health" category="health" country={country} />} />
         <Route path='/business' element={<News key="business" category="business" country={country} />} />
         <Route path='/technology' element={<News key="technology" category="technology" country={country} />} />
-
       </Routes>
-
+      <Footer />
     </>
   );
 }
