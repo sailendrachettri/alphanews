@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
-import { Tab } from '@mui/material';
+import { Divider, Tab } from '@mui/material';
 
 import MotionPhotosAutoIcon from '@mui/icons-material/MotionPhotosAuto';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -80,10 +80,15 @@ function Navbar() {
                         >
                             <Box onClick={handleCloseNavMenu}>
                                 <MenuItem><Tab label='Technology' to='/technology' component={Link} /></MenuItem>
+                                <Divider />
                                 <MenuItem><Tab label='Science' to='/Science' component={Link} /></MenuItem>
+                                <Divider />
                                 <MenuItem><Tab label='Entertainment' to='/entertainment' component={Link} /></MenuItem>
+                                <Divider />
                                 <MenuItem><Tab label='Health' to='/health' component={Link} /></MenuItem>
+                                <Divider />
                                 <MenuItem><Tab label='Sports' to='/sports' component={Link} /></MenuItem>
+                                <Divider />
                                 <MenuItem><Tab label='Business' to='/business' component={Link} /></MenuItem>
                             </Box>
 
