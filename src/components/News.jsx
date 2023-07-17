@@ -34,22 +34,24 @@ export const News = (props) => {
 
     return (
         <>
-            <Grid container sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-            }}>
+            <Box minHeight='70vh'>
+                <Grid container sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}>
 
-                {
-                    articles.map((element) => {
-                        const { title, description, urlToImage, publishedAt, url, author, source } = element
+                    {
+                        articles.map((element) => {
+                            const { title, description, urlToImage, publishedAt, url, author, source } = element
 
-                        return <Box key={Math.random()}>
-                            <NewsItem title={title ? title.slice(0, 87) : defaultTitle} description={(description !== null && description.length > 30) ? description.slice(0, 132) : defaultDescription} img={!urlToImage ? defaultImage : urlToImage} newsUrl={url} author={author} publishedAt={publishedAt} newsSource={!source.name ? "Unknown" : source.name} />
-                        </Box>
-                    })
-                }
-            </Grid>
+                            return <Box key={Math.random()}>
+                                <NewsItem title={title ? title.slice(0, 87) : defaultTitle} description={(description !== null && description.length > 30) ? description.slice(0, 132) : defaultDescription} img={!urlToImage ? defaultImage : urlToImage} newsUrl={url} author={author} publishedAt={publishedAt} newsSource={!source.name ? "Unknown" : source.name} />
+                            </Box>
+                        })
+                    }
+                </Grid>
+            </Box>
 
         </>
     )
