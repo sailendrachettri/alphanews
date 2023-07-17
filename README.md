@@ -5,10 +5,12 @@ The main objective of this application is to to provide daily news with most rea
 ## Tech Stack
 
 **Client:** React JS
+
+**Design:** Material UI
   
 ## Live Dome
 
-[will update soon]
+[This WebApp is not yet published]
 The developer version of newsapi not work in production
 
 ## Run Locally
