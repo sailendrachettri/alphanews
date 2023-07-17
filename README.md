@@ -10,6 +10,8 @@
 **Design:** Material UI
 
 **API:** Newsapi.org
+
+**Language:** Javascript
   
 ## App on Production
 
@@ -42,7 +44,7 @@ Start the Server
   npm run start
 ```
 
-# Features to be added
+# New features to be added
 - Save favorite news at one place
 - Share new on social handles
 - Custom full article reading page
