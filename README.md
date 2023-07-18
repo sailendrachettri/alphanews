@@ -39,12 +39,12 @@ Start the Server
 
 # New Features ideas
 - Save favorite news at one place
-- Share new on social handles
 - Custom full article reading page
 
 # Features of the app
 
 - Read the latest news across world
+- Share news on social handles or copy link
 - Save the importent new for later use (working on this feature)
 
 # Screenshots
