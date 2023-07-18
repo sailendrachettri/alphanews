@@ -17,7 +17,7 @@ export default function Footer() {
             }}>
                 <Box>
                     <Typography> Copyright © {year} </Typography>
-                    <a href="https://github.com/sailendrachettri" style={{ textDecoration: 'none', color: "#050417" }}> <Typography sx={{ fontWeight: 'bold' }} fontSize='large'> Sailendra Chettri</Typography></a>
+                    <a href="https://www.instagram.com/01_sailendra" style={{ textDecoration: 'none', color: "#050417" }}> <Typography sx={{ fontWeight: 'bold' }} fontSize='large'> Sailendra Chettri</Typography></a>
                 </Box>
                 <MotionPhotosAutoIcon fontSize='large' />
 

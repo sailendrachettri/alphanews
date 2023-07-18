@@ -1,14 +1,21 @@
 
 # AlphaNews - A News Web Application
 
-The main objective of this application is to to provide daily news with most readable format. All the news will fetched from newsapi.org
+- The main focus of this application is to connect news articles from all around the world and deliver it to user as fast as possible in best visualize way.
+- News articles will fetched using newsapi.org
 ## Tech Stack
 
 **Client:** React JS
-  
-## Live Dome
 
-[will update soon]
+**Design:** Material UI
+
+**API:** Newsapi.org
+
+**Language:** Javascript
+  
+## App on Production
+
+[This WebApp is not yet published]
 The developer version of newsapi not work in production
 
 ## Run Locally
@@ -37,12 +44,13 @@ Start the Server
   npm run start
 ```
 
-# New Features ideas
+# New features to be added
 - Save favorite news at one place
 - Custom full article reading page
+- Hide the news card if not reader's interest
 
-# Features of the app
-
+# Current features of the app
+- Read news in best visualize way
 - Read the latest news across world
 - Share news on social handles or copy link
 - Save the importent new for later use (working on this feature)
@@ -53,7 +61,7 @@ Start the Server
 # Contact
 <p><span style="margin-right: 30px;"></span><a href="https://www.linkedin.com/in/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width: 10%;"></a><span style="margin-right: 30px;"></span><a href="https://github.com/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
 
-### [Your feedback will always be appreciated]
+#### [Your feedback will always be appreciated]
 
 
 ## Made By
