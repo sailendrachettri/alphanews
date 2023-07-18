@@ -15,6 +15,8 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { Box } from '@mui/material';
 import Link from '@mui/material/Link';
 
+import { RWebShare } from 'react-web-share';
+
 export const NewsItem = (props) => {
     // VARIABLES
     const getLogo = props.newsSource.charAt(0);
@@ -73,7 +75,16 @@ export const NewsItem = (props) => {
                                 <FavoriteIcon />
                             </IconButton>
                             <IconButton aria-label="share">
-                                <ShareIcon />
+                                <RWebShare
+
+                                    data={{
+                                        text: `News articles - "${props.newsSource}"`,
+                                        url: props.newsUrl,
+                                        title: props.title,
+                                    }}>
+
+                                    <ShareIcon />
+                                </RWebShare>
                             </IconButton>
                         </Box>
                         <Box>
