@@ -60,7 +60,9 @@ Start the Server
 # Contact
 <p><span style="margin-right: 30px;"></span><a href="https://www.linkedin.com/in/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width: 10%;"></a><span style="margin-right: 30px;"></span><a href="https://github.com/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
 
-#### [Your feedback will always be appreciated]
+- #### Your valuable feedback will always be appreciated
+- #### Open to accept your countribution in this project
+
 
 
 ## Made By
