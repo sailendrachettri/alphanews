@@ -44,7 +44,7 @@ Start the Server
   npm run start
 ```
 
-# New features to be added
+# New features ideas
 - Save favorite news at one place
 - Custom full article reading page
 - Hide the news card if not reader's interest
@@ -53,10 +53,9 @@ Start the Server
 - Read news in best visualize way
 - Read the latest news across world
 - Share news on social handles or copy link
-- Save the importent new for later use (working on this feature)
 
 # Screenshots
-<p><img src="https://drive.google.com/uc?export=view&id=19eMbJ6R9JzirK3m-P9FtOxDdBcWe9_hj" alt="Front page"></p>
+<p><img src="https://drive.google.com/uc?export=view&id=1bujeZNkmWfV7g_0GJhwI6Tor9ZVruJVz" alt="Front page"></p>
 
 # Contact
 <p><span style="margin-right: 30px;"></span><a href="https://www.linkedin.com/in/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" style="width: 10%;"></a><span style="margin-right: 30px;"></span><a href="https://github.com/sailendrachettri/"><img target="_blank" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 10%;"></a></p>
@@ -65,4 +64,4 @@ Start the Server
 
 
 ## Made By
-- [@SailendraChettri](https://github.com/sailendrachettri)
+- [@SailendraChettri](https://instagram.com/01_sailendra)
