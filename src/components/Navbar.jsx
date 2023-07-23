@@ -11,13 +11,16 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
 import { Divider, Tab } from '@mui/material';
-
 import MotionPhotosAutoIcon from '@mui/icons-material/MotionPhotosAuto';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { useState } from 'react';
+import { blue } from '@mui/material/colors';
 
 function Navbar() {
-    const [anchorElNav, setAnchorElNav] = React.useState(null);
+    // STATE VARIABLES
+    const [anchorElNav, setAnchorElNav] = useState(null);
 
+    // METHODS
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
@@ -26,11 +29,12 @@ function Navbar() {
         setAnchorElNav(null);
     };
 
+
     return (
         <AppBar position="static" sx={{ bgcolor: "whitesmoke", color: 'black' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <MotionPhotosAutoIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+                    <MotionPhotosAutoIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: blue[800] }} fontSize='large' />
                     <Typography
                         variant="h6"
                         noWrap
@@ -42,7 +46,7 @@ function Navbar() {
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: 'inherit',
+                            color: blue[800],
                             textDecoration: 'none',
                         }}
                     >
@@ -91,13 +95,11 @@ function Navbar() {
                                 <Divider />
                                 <MenuItem><Tab label='Business' to='/business' component={Link} /></MenuItem>
                             </Box>
-
-
                         </Menu>
                     </Box>
 
-                    {/* Desktop view navbar */}
-                    <MotionPhotosAutoIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                    {/* Mobile view navbar */}
+                    <MotionPhotosAutoIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: blue[800] }} />
                     <Typography
                         variant="h5"
                         noWrap
@@ -110,8 +112,9 @@ function Navbar() {
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: 'inherit',
+                            color: blue[800],
                             textDecoration: 'none',
+
                         }}
                     >
                         ALPHA
@@ -125,11 +128,12 @@ function Navbar() {
                         <Tab label='Business' to='/business' component={Link} />
                     </Box>
 
+
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Alpha News">
                             <IconButton sx={{ p: 0 }}>
                                 <a href='https://github.com/sailendrachettri/alphanews' className='logoColor' target='_blank' rel="noreferrer">
-                                    <GitHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} fontSize='large' />
+                                    <GitHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color: blue[800] }} fontSize='large' />
                                 </a>
                             </IconButton>
                         </Tooltip>

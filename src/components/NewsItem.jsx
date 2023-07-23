@@ -7,12 +7,11 @@ import CardActions from '@mui/material/CardActions';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { grey } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import { blue } from '@mui/material/colors';
 import ShareIcon from '@mui/icons-material/Share';
 import AutoStoriesTwoToneIcon from '@mui/icons-material/AutoStoriesTwoTone';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { Box } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import Link from '@mui/material/Link';
 
 import { RWebShare } from 'react-web-share';
@@ -25,15 +24,6 @@ export const NewsItem = (props) => {
     const inputDate = props.publishedAt;
     const date = new Date(inputDate);
 
-    // Formatting options
-    const options = {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        hour: "numeric",
-        minute: "2-digit",
-        hour12: true
-    };
     // Formatting the date
     const formattedDate = date.toLocaleDateString(undefined, options);
 
@@ -43,7 +33,7 @@ export const NewsItem = (props) => {
                 <Card sx={{ maxWidth: 345, bgcolor: 'whitesmoke' }}>
                     <CardHeader
                         avatar={
-                            <Avatar sx={{ bgcolor: grey[900] }} aria-label="news source">
+                            <Avatar sx={{ bgcolor: blue[800] }} aria-label="news source">
                                 {getLogo}
                             </Avatar>
                         }
@@ -71,9 +61,6 @@ export const NewsItem = (props) => {
                     </CardContent>
                     <CardActions disableSpacing sx={{ display: 'flex', justifyContent: 'space-around' }}>
                         <Box>
-                            <IconButton aria-label="add to favorites">
-                                <FavoriteIcon />
-                            </IconButton>
                             <IconButton aria-label="share">
                                 <RWebShare
 
@@ -83,16 +70,16 @@ export const NewsItem = (props) => {
                                         title: props.title,
                                     }}>
 
-                                    <ShareIcon />
+                                    <ShareIcon sx={{ color: blue[800] }} />
                                 </RWebShare>
                             </IconButton>
                         </Box>
-                        <Box>
-                            <IconButton aria-label='read more'>
-                                <Link href={props.newsUrl} target="_blank" color='text.secondary'>
-                                    <AutoStoriesTwoToneIcon />
-                                </Link>
-                            </IconButton>
+                        <Box aria-label='read more'>
+                            <Link href={props.newsUrl} target="_blank" color='text.secondary' underline='none'>
+                                <Button variant="outlined" endIcon={<AutoStoriesTwoToneIcon />}>
+                                    Readmore
+                                </Button>
+                            </Link>
                         </Box>
                     </CardActions>
                 </Card>
@@ -100,3 +87,14 @@ export const NewsItem = (props) => {
         </>
     )
 }
+
+
+// Formatting options date to display at top
+const options = {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true
+};
