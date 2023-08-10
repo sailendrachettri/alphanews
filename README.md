@@ -49,7 +49,7 @@ Start the Server
 - Custom full article reading page
 - Hide the news card if not reader's interest
 
-# Current features of the app
+# Features of the app
 - Read news in best visualize way
 - Read the latest news across world
 - Share news on social handles or copy link
