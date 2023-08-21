@@ -20,7 +20,7 @@ export const Business = (props) => {
         setArticles(data.articlesBusiness) // this data is demo data from same directory
     }
     useEffect(() => {
-        document.title = "Alpha News - get the latest news from all over the world"
+        document.title = "Business - Alpha News: get the latest news from all over the world"
         updateNews()
         // eslint-disable-next-line
     }, [])

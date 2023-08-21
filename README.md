@@ -16,7 +16,7 @@
 ## App on Production
 
 Data is static in production version
-#### Demo:https://alphanews-site.netlify.app/
+#### Demo: https://alphanews-site.netlify.app/
 The developer version of newsapi not work in production
 
 ## Run Locally
