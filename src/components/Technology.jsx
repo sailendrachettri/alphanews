@@ -11,7 +11,7 @@ export const Technology = (props) => {
     const [articles, setArticles] = useState([])
 
     // constant and variables
-    const defaultImage = process.env.REACT_APP_DEFAULT_IMAGE_URL
+    const defaultImage = 'https://images.unsplash.com/photo-1546422904-90eab23c3d7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80'
     const defaultDescription = "The description of this news is not availabe at the moment. But you can still read the news from homepage by clicking readmore icon."
     const defaultTitle = "The title of this news is not availabe at this moment. Please go to home page and read."
 
