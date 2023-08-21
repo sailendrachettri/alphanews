@@ -4,30 +4,23 @@ import Grid from '@mui/material/Grid';
 import { useEffect, useState } from 'react';
 import { Box } from '@mui/material';
 
-export const News = (props) => {
+import data from './demoData.json'
+
+export const Science = (props) => {
     // STATE VARIABLES
     const [articles, setArticles] = useState([])
 
     // constant and variables
-    const apiKey = process.env.REACT_APP_NEWS_API_KEY
     const defaultImage = process.env.REACT_APP_DEFAULT_IMAGE_URL
     const defaultDescription = "The description of this news is not availabe at the moment. But you can still read the news from homepage by clicking readmore icon."
     const defaultTitle = "The title of this news is not availabe at this moment. Please go to home page and read."
 
-    // FUNCTIONS
-    const captializeFirstLetter = (string) => {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-
     // handling API
     const updateNews = async () => {
-        const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${apiKey}`
-        const data = await fetch(url);
-        const parsedData = await data.json()
-        setArticles(parsedData.articles)
+        setArticles(data.articlesScience) // this data is demo data from same directory
     }
     useEffect(() => {
-        document.title = `${props.category === 'general' ? "Alpha News - get the latest news from all over the world" : captializeFirstLetter(props.category)} latest news - Alpha News`
+        document.title = "Alpha News - get the latest news from all over the world"
         updateNews()
         // eslint-disable-next-line
     }, [])

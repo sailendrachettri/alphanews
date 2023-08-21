@@ -1,28 +1,35 @@
 
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import { News } from './components/News';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+import { General } from './components/General';
+import { Entertainment } from './components/Entertainment';
+import { Health } from './components/Health';
+import { Technology } from './components/Technology';
+import { Business } from './components/Business';
+import { Science } from './components/Science';
+import { Sports } from './components/Sports';
+
 
 function App() {
-  const country = 'in'
+  // const country = 'in'
 
   return (
-    <>
+    <div>
       <Navbar />
       <Routes>
-        <Route path='/' element={<News key="general" category="general" country={country} />} />
-        <Route path='/entertainment' element={<News key="entertainment" category="entertainment" country={country} />} />
-        <Route path='/sports' element={<News key="sports" category="sports" country={country} />} />
-        <Route path='/science' element={<News key="science" category="science" country={country} />} />
-        <Route path='/health' element={<News key="health" category="health" country={country} />} />
-        <Route path='/business' element={<News key="business" category="business" country={country} />} />
-        <Route path='/technology' element={<News key="technology" category="technology" country={country} />} />
+        <Route path='/' element={<General />} />
+        <Route path='/entertainment' element={<Entertainment />} />
+        <Route path='/sports' element={<Sports />} />
+        <Route path='/science' element={<Science />} />
+        <Route path='/health' element={<Health />} />
+        <Route path='/business' element={<Business />} />
+        <Route path='/technology' element={<Technology />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
