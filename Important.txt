@@ -1,0 +1,1 @@
+const inDeploymentMode = true; // change this to false to see real news data - in all 7 pages
