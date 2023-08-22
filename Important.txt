@@ -1,1 +1,6 @@
-const inDeploymentMode = true; // change this to false to see real news data - in all 7 pages
+NOTE:
+In Development you'll get the news with one day delay because
+in Developer plan of NEWS API you will get this ONLY.
+
+In PRODUCTION you will get sample data ONLY because
+developer plan of news api DOESN'T work on PRODUCTION

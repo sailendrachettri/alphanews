@@ -17,17 +17,17 @@ export const Entertainment = (props) => {
 
     // handling API
     const updateNews = async () => {
-        let inDeploymentMode = true; // toggle this true/false to get latest new articles or sameple news articles
+        const hostname = window.location.hostname
 
-        if (inDeploymentMode) {
-            // Below code works on production with samle news articles
-            setArticles(data.articlesEntertainment) // this data is demo data from same directory
-        } else {
+        if (hostname === "localhost") {
             // Below code works on development only with real news articles
             const entertainmentNews = "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=fa152b462f164a19956f7bcf1edb3674"
             const data = await fetch(entertainmentNews);
             const parsedData = await data.json()
             setArticles(parsedData.articles)
+        } else {
+            // Below code works on production with samle news articles
+            setArticles(data.articlesEntertainment) // this data is demo data from same directory
         }
     }
     useEffect(() => {
