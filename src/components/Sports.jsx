@@ -16,7 +16,18 @@ export const Sports = (props) => {
     const defaultTitle = "The title of this news is not availabe at this moment. Please go to home page and read."
     // handling API
     const updateNews = async () => {
-        setArticles(data.articlesSports) // this data is demo data from same directory
+        let inDeploymentMode = true; // toggle this true/false to get latest new articles or sameple news articles
+
+        if (inDeploymentMode) {
+            // Below code works on production with samle news articles
+            setArticles(data.articlesSports) // this data is demo data from same directory
+        } else {
+            // Below code works on development only with real news articles
+            const sportsNews = "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=fa152b462f164a19956f7bcf1edb3674"
+            const data = await fetch(sportsNews);
+            const parsedData = await data.json()
+            setArticles(parsedData.articles)
+        }
     }
     useEffect(() => {
         document.title = "Sports - Alpha News: get the latest news from all over the world"

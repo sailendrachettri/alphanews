@@ -17,7 +17,19 @@ export const Business = (props) => {
 
     // handling API
     const updateNews = async () => {
-        setArticles(data.articlesBusiness) // this data is demo data from same directory
+        let inDeploymentMode = true; // toggle this true/false to get latest new articles or sameple news articles
+
+        if (inDeploymentMode) {
+            // Below code works on production with samle news articles
+            setArticles(data.articlesBusiness) // this data is demo data from same directory
+        }
+        else {
+            // Below code works on development only with real news articles
+            const businessNews = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=fa152b462f164a19956f7bcf1edb3674"
+            const data = await fetch(businessNews);
+            const parsedData = await data.json()
+            setArticles(parsedData.articles)
+        }
     }
     useEffect(() => {
         document.title = "Business - Alpha News: get the latest news from all over the world"
