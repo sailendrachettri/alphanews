@@ -20,11 +20,13 @@ export const Health = (props) => {
         const hostname = window.location.hostname
 
         if (hostname === "localhost") {
+            props.setProgress(50);
             // Below code works on development only with real news articles
             const healthNews = "https://newsapi.org/v2/top-headlines?country=in&category=health&apiKey=fa152b462f164a19956f7bcf1edb3674"
             const data = await fetch(healthNews);
             const parsedData = await data.json()
             setArticles(parsedData.articles)
+            props.setProgress(100);
         } else {
             // Below code works on production with samle news articles
             setArticles(data.articlesHealth) // this data is demo data from same directory

@@ -21,11 +21,13 @@ export const Technology = (props) => {
         const hostname = window.location.hostname
 
         if (hostname === "localhost") {
+            props.setProgress(50);
             // Below code works on development only with real news articles
             const technologyNews = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=fa152b462f164a19956f7bcf1edb3674"
             const data = await fetch(technologyNews);
             const parsedData = await data.json()
             setArticles(parsedData.articles)
+            props.setProgress(100);
         } else {
             // Below code works on production with samle news articles
             setArticles(data.articlesTechnology) // this data is demo data from same directory

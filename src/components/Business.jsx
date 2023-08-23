@@ -16,19 +16,24 @@ export const Business = (props) => {
     const defaultTitle = "The title of this news is not availabe at this moment. Please go to home page and read."
 
     // handling API
+    // props.setProgress(30);
     const updateNews = async () => {
         const hostname = window.location.hostname
 
         if (hostname === "localhost") {
+            props.setProgress(60);
             // Below code works on development only with real news articles
             const businessNews = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=fa152b462f164a19956f7bcf1edb3674"
             const data = await fetch(businessNews);
             const parsedData = await data.json()
             setArticles(parsedData.articles)
+            props.setProgress(100);
         }
         else {
+            props.setProgress(67);
             // Below code works on production with samle news articles
             setArticles(data.articlesBusiness) // this data is demo data from same directory
+            props.setProgress(100);
         }
     }
     useEffect(() => {

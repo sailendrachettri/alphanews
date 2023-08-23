@@ -12,24 +12,32 @@ import { Business } from './components/Business';
 import { Science } from './components/Science';
 import { Sports } from './components/Sports';
 
+import LoadingBar from 'react-top-loading-bar'
+import { useState } from 'react';
+
 
 function App() {
-  // const country = 'in'
+  const [progress, setProgress] = useState(0);
 
   return (
-    <div>
+    <>
+      <LoadingBar
+        color='#000'
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
       <Navbar />
       <Routes>
-        <Route path='/' element={<General />} />
-        <Route path='/entertainment' element={<Entertainment />} />
-        <Route path='/sports' element={<Sports />} />
-        <Route path='/science' element={<Science />} />
-        <Route path='/health' element={<Health />} />
-        <Route path='/business' element={<Business />} />
-        <Route path='/technology' element={<Technology />} />
+        <Route path='/' element={<General setProgress={setProgress} />} />
+        <Route path='/entertainment' element={<Entertainment setProgress={setProgress} />} />
+        <Route path='/sports' element={<Sports setProgress={setProgress} />} />
+        <Route path='/science' element={<Science setProgress={setProgress} />} />
+        <Route path='/health' element={<Health setProgress={setProgress} />} />
+        <Route path='/business' element={<Business setProgress={setProgress} />} />
+        <Route path='/technology' element={<Technology setProgress={setProgress} />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 

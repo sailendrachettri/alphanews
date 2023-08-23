@@ -21,10 +21,12 @@ export const Entertainment = (props) => {
 
         if (hostname === "localhost") {
             // Below code works on development only with real news articles
+            props.setProgress(50);
             const entertainmentNews = "https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=fa152b462f164a19956f7bcf1edb3674"
             const data = await fetch(entertainmentNews);
             const parsedData = await data.json()
             setArticles(parsedData.articles)
+            props.setProgress(100);
         } else {
             // Below code works on production with samle news articles
             setArticles(data.articlesEntertainment) // this data is demo data from same directory
