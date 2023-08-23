@@ -28,8 +28,10 @@ export const Science = (props) => {
             setArticles(parsedData.articles)
             props.setProgress(100);
         } else {
+            props.setProgress(50);
             // Below code works on production with samle news articles
             setArticles(data.articlesScience) // this data is demo data from same directory
+            props.setProgress(100);
         }
 
 

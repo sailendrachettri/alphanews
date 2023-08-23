@@ -28,8 +28,10 @@ export const General = (props) => {
             props.setProgress(100);
         }
         else {
+            props.setProgress(50);
             // Below code works on production with samle news articles
             setArticles(data.articlesGeneral) // this data is demo data from same directory
+            props.setProgress(100);
         }
     }
     useEffect(() => {
