@@ -17,7 +17,7 @@
 
 Data is static in production version
 #### Demo: https://alphanews-site.netlify.app/
-The developer version of newsapi not work in production
+The developer version of newsapi not work in production. But in development mode data is dynamic. So, colne the project and run on you machine.
 
 ## Run Locally
 
